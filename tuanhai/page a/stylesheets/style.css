@@ -1,0 +1,42 @@
+#page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section_normal_1  .container .column{
+
+
+}
+
+#section_normal_1 .alpha{
+    max-width: 134px;
+    max-height: 32px;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    margin-right: 10%;
+}
+
+#section_normal_1 .omega{
+    max-width: 134px;
+    max-height: 32px;
+    display: flex;
+    float: right;
+    flex-direction: row;
+    margin-left: 10%;
+}
+
+/*#section_normal_1 .columns {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*@media screen and (min-width: 720px) {*/
+/*    #page {*/
+/*        display: flex;*/
+/*        flex-direction: column;*/
+/*        align-content: center;*/
+/*        max-width: 80%;*/
+/*    }*/
+/*}*/
