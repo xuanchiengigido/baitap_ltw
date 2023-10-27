@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xoay hình sau 2 giây</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<img id="rotateImage" src="img/Picture1.png" alt="Hình ảnh">
+
+<script>
+    let rotation = 0;
+    function rotateImage() {
+        rotation += 15;
+        const image = document.getElementById('rotateImage');
+        image.style.transform = `rotate(${rotation}deg)`;
+    }
+    setInterval(rotateImage, 2000);
+</script>
+
+</body>
+</html>

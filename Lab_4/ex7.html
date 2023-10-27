@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>64 Buttons</title>
+</head>
+<body>
+<div class="button-container">
+    <script>
+        for (let i = 1; i <= 64; i++) {
+            const button = document.createElement('button');
+            button.textContent = i;
+            button.className = 'button';
+            button.addEventListener('click', click);
+            document.body.appendChild(button);
+        }
+
+        let currentNumber = 1;
+
+        function click() {
+            const clickedNumber = parseInt(this.textContent);
+            if (clickedNumber === currentNumber) {
+                this.style.display = 'none';
+                currentNumber++;
+            } else {
+                alert('Nhấn sai! Hãy nhấn đúng số tiếp theo.');
+            }
+        }
+    </script>
+</div>
+
+</body>
+</html>

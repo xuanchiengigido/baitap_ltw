@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<textarea id="textArea" placeholder="Nhập đoạn văn"></textarea>
+<input type="text" id="textField" placeholder="Nhập dòng">
+<button onclick="tinhSoLanXuatHien()">Tính số lần xuất hiện</button>
+<div id="result"></div>
+
+<script>
+    function tinhSoLanXuatHien() {
+        const A = document.getElementById('textArea').value.toLowerCase();
+        const B = document.getElementById('textField').value.toLowerCase();
+
+        let count = 0;
+        let pos = A.indexOf(B);
+
+        while (pos !== -1) {
+            count++;
+            pos = A.indexOf(B, pos + 1);
+        }
+
+        const resultElement = document.getElementById('result');
+        resultElement.innerText = `Số lần xuất hiện ${count}`;
+    }
+</script>
+
+
+</body>
+</html>
